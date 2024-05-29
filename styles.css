@@ -1,0 +1,240 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+h1, h2, h3 {
+    margin: 0;
+    font-weight: bold;
+}
+
+a {
+    color: #0077cc;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+
+header {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav li {
+    margin-right: 1rem;
+}
+
+nav a {
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+nav a:hover {
+    color: #005ea6; 
+}
+
+
+.hero {
+    background-image: url("images/Lighthouse.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #141414;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: -100px; 
+    margin-left: -50px;
+}
+
+.hero p {
+    font-size: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.hero button {
+    background-color: #0077cc;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.hero button:hover {
+    background-color: #005ea6;
+}
+
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.about, .rooms, .amenities, .contact {
+    margin-bottom: 2rem;
+}
+
+.rooms ul {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 2rem;
+}
+
+.rooms li {
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.rooms li:hover {
+    background-color: #eee;
+}
+
+.rooms a {
+    display: block;
+}
+
+.amenities ul {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 2rem;
+}
+
+.amenities li {
+    text-align: center;
+}
+
+.contact ul {
+    margin-top: 1rem;
+}
+
+.contact li {
+    margin-bottom: 0.5rem;
+}
+
+
+footer {
+    background-color: #0077cc;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-right: 0 auto;
+    max-width: 800px;
+}
+
+.image {
+    width: 800px; 
+    height: auto; 
+    margin: 20px; 
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.image2 {
+    width: 150px; 
+    height: auto; 
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); 
+    margin: 10px; 
+}
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 0;
+    margin: 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.dropdown-menu li {
+    display: block;
+}
+
+.dropdown-menu li a {
+    display: block;
+    padding: 10px;
+    color: #0077cc;
+    text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+    background-color: #005ea6;
+}
+
+
+.float-element {
+    float: right;
+    width: 300px;
+    margin: 0 0 1rem 1rem;
+    border: 1px solid #ccc;
+    padding: 1rem;
+}
+
+
+.relative-container {
+    position: relative;
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 18rem;
+}
+
+.absolute-element {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #0077cc;
+    color: #fff;
+    padding: 0.5rem;
+}
+
+
+#highlight {
+    background-color: #ffeb3b;
+    padding: 0.5rem;
+    border-radius: 5px;
+}

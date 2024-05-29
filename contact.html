@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - Rhode Island</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="home.html">Home</a></li>
+        <li><a href="capital.html">Capital Providence</a></li>
+        <li><a href="newport.html">Newport</a></li>
+        <li><a href="warwick.html">Warwick</a></li>
+        <li><a href="contact.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="contact">
+      <h2>Contact Us</h2>
+      <form id="contactForm">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName" name="firstName" placeholder="First Name" required>
+        
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName" name="lastName" placeholder="Last Name" required>
+        
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="Email Address" required>
+        
+        <label for="confirmEmail">Confirm Email Address:</label>
+        <input type="email" id="confirmEmail" name="confirmEmail" placeholder="Confirm Email Address" required>
+        
+        <label for="question">Your Question:</label>
+        <textarea id="question" name="question" placeholder="Ask your question here" required></textarea>
+        
+        <button type="submit">Submit</button>
+      </form>
+      <p id="error-message" style="color: red; display: none;">Emails do not match.</p>
+    </section>
+    
+    <!-- Example of using float property with contact information -->
+    <div class="float-element">
+      <h3>State Tourism</h3>
+      <p>Ocean Drive</p>
+      <p>Providence, RI</p>
+      <p>Phone: (401) 800-1000</p>
+      <p>Email: info@tourism.ri.wgu</p>
+    </div>
+    
+    <!-- Example of using absolute and relative positioning with map -->
+    <div class="relative-container">
+      <h3>Visit Us</h3>
+      <p>Come and visit our main office located in the heart of Providence.</p>
+      <div class="absolute-element">Office Hours: 9 AM - 5 PM</div>
+      <img src="images/mapisland.png" alt="Map of Rhode Island" class="image2">
+    </div>
+    
+    <!-- Example of using ID selector for highlighting important information -->
+    <p id="highlight">Please ensure that your email addresses match before submitting the form.</p>
+  </main>
+  <footer>
+    <p>&copy; 2023 State of Rhode Island. All Rights Reserved.</p>
+  </footer>
+
+  <script src="java.js"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(event) {
+      var email = document.getElementById('email').value;
+      var confirmEmail = document.getElementById('confirmEmail').value;
+      if (email !== confirmEmail) {
+        document.getElementById('error-message').style.display = 'block';
+        event.preventDefault();
+      }
+    });
+  </script>
+</body>
+</html>
